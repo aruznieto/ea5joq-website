@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: EA5JOQ
+  site: 'https://ea5joq.es'
   base: '/'
   trailingSlash: false
 
@@ -9,16 +9,16 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
+    default: EA5JOQ
+    template: '%s — EA5JOQ'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: EA5JOQ
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/ea5joq.png'
         width: 1200
         height: 628
     type: website
