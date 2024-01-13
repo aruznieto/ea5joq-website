@@ -5,7 +5,7 @@ import type { CallToAction } from '~/types';
 
 const {
   variant = 'secondary',
-  target,
+  url,
   text = Astro.slots.render('default'),
   icon = '',
   class: className = '',
@@ -30,7 +30,7 @@ const variants = {
   ) : (
     <a
       class={twMerge(variants[variant] || '', className)}
-      {...(target ? { target: target, rel: 'noopener noreferrer' } : {})}
+      {...(url ? { href: url, rel: 'noopener noreferrer', target:"_blank" } : {})}
       {...rest}
     >
       <Fragment set:html={text} />

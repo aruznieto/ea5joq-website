@@ -1,0 +1,50 @@
+---
+publishDate: 2024-07-17T00:00:00Z
+draft: true
+title: Cómo configurar Pi-Star (WPSD).
+excerpt: Pi-Star es un software para la gestión de repetidores digitales, que se ejecuta en una Raspberry Pi.  En este artículo se explica cómo configurar correctamente el software.
+image: https://3.bp.blogspot.com/-8J4uPushXc4/XGcts2NTA-I/AAAAAAADMv8/r8AAKVpCm8YuCGYzrK9nzDkDgPLwivSFACEwYBhgL/s1600/jumbo%2Bboxed.jpeg
+category: Documentation
+tags:
+  - pistar
+  - dmr
+  - wpsd
+metadata:
+  canonical: https://web.ea5joq.es/blog/astrowind-template-in-depth
+---
+
+import DListItem from '~/components/ui/DListItem.astro';
+import ToggleTheme from '~/components/common/ToggleTheme.astro';
+import Button from '~/components/ui/Button.astro';
+import { YouTube } from '@astro-community/astro-embed-youtube';
+
+## Instalación
+
+A pesar de que Pi-Star está preparado principalmente para ejecutarse sobre una Raspberry Pi, también es posible ejecutarlo sobre otros sistemas como puede ser una Orange Pi (LTS 512 con procesador H2).
+
+Haciendo clic en el siguiente enlace, puedes descargar todas las versiones de WPSD:
+
+<Button url="https://w0chp.radio/wpsd/#download-wpsd"> Descargar WPSD </Button>
+
+Una vez descargada la imagen, debemos grabarla en una tarjeta SD.  Para ello, podemos utilizar el programa Etcher.
+
+<Button url="https://www.balena.io/etcher/"> Etcher </Button>
+
+## Configuración
+
+Una vez grabada la tarjeta SD, procederemos a conectarla en la Raspberry Pi, pondremos el hat MMDVM y conectaremos el cable de red (si disponemos de él), en otro caso deberemos generar el fichero `wpa_supplicant.conf` para conectar nuestra Pi al Wi-Fi.
+
+<Button url="https://w0chp.radio/wpa-config-generator/"> Generador de wpa_supplicant.conf </Button>
+
+Una vez hayamos generado el archivo, lo pondremos en la raiz de la tarjeta SD.
+
+Conectamos la Pi a la corriente y esperamos a que se conecte a la red.  Una vez conectada, podremos acceder a la interfaz web de Pi-Star a través de la dirección IP que nos haya asignado el router o a través de `pi-star.local`
+
+<Button url="http://pi-star.local"> pi-star.local </Button>
+
+Nos pedirá usuario y contraseña, por defecto son:
+
+- Usuario: *pi-star*
+- Contraseña: *raspberry*
+
+Cuando hayamos accedido, procederemos a comenzar la configuración de Pi-Star.
